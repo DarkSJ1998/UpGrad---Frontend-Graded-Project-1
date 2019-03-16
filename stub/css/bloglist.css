@@ -81,7 +81,7 @@ body {
 
 .delete-modal {
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     top: 0px;
     left: 0px;
     height: 100%;
@@ -98,15 +98,18 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-family: 'Abel';
     z-index: 2;
 }
 .delete-modal-content p {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .btn {
-    padding: 10px 50px;
+    padding: 12px 10px;
+    width: 30%;
     margin: 0px 10px;
     color: white;
     border: 0px;

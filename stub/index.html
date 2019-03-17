@@ -32,7 +32,7 @@
 
         	<!-- Insert code for All Posts & Create Post button here -->
             <a href="html/bloglist.html"><button class="button2">All Posts</button></a>
-            <button class="button2">Create Posts</button>
+            <button class="button2" onclick="createModal()">Create Posts</button>
         </div>
     </div>
 
@@ -104,7 +104,31 @@
     <div>
 
     	<!-- Insert code for Create Post modal here -->
-
+        <div id="createModal" class="modal">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <span class="title">Create a new Post</span>
+                    <span class="close" onclick="hideCreateModal()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form id="create-form" action="#">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Enter the Title" required>
+                        
+                        <label for="postedBy">Posted by</label>
+                        <input type="text" id="postedBy" name="postedBy" placeholder="Enter the author" required>
+                        
+                        <label for="content">Content</label>
+                        <textarea id="content" name="content" placeholder="Description here..." required></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button form="create-form" type="submit">Add Post</button>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
 	<!-- Place all Javascript for header in this file -->

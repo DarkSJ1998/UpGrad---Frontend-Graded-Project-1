@@ -111,6 +111,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     color: white;
     background-color: #5EB762;
     border: 0px;
+    cursor: pointer;
 }
 .modal-footer p {
     font-family: 'Arial';
